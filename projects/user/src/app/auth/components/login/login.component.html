@@ -1,0 +1,35 @@
+<div class="login d-flex justify-content-center align-items-center m-auto">
+    
+    <div class="row">
+        <div class="col-md-6 p-0">
+            <div class="overlay"></div>
+            <img src="../../../../assets/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+         <div class="h-100 d-flex align-items-center justify-content-center w-100">
+            <div class="box w-75">
+                <h2>Login </h2>
+             
+        
+                <form [formGroup]="loginForm">
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email"  placeholder="email">
+                        <mat-error>required</mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Password</mat-label>
+                        <input matInput formControlName="password"  placeholder="password">
+                        <mat-error>required</mat-error>
+        
+                    </mat-form-field>
+                </form>
+                <div class="d-flex justify-content-center">
+                    <button [disabled]="loginForm.invalid"  mat-raised-button color="warn">Login</button>
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+ 
+</div>

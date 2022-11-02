@@ -1,0 +1,14 @@
+:host ::ng-deep {
+    table {
+        thead {
+            background-color: #bc1059!important;
+            .mat-header-cell {
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.w-20 {
+    width: 20%!important;
+}
