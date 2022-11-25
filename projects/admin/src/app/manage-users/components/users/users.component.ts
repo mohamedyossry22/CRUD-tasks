@@ -26,17 +26,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class UsersComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'email' ,'tasksAssigned', 'actions'];
   dataSource = ELEMENT_DATA;
-  userFilter!:FormGroup
-  constructor(private fb:FormBuilder) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.createform()
   }
 
-  createform() {
-    this.userFilter = this.fb.group({
-      name:['']
-    })
-  }
+
 
 }

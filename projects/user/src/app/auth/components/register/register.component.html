@@ -8,24 +8,37 @@
         <div class="col-md-6">
          <div class="h-100 d-flex align-items-center justify-content-center w-100">
             <div class="box w-75">
-                <h2>Login </h2>
+                <h2>Register </h2>
              
         
                 <form>
                     <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Username</mat-label>
+                        <input matInput  placeholder="username">
+                        <mat-error>required</mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Email</mat-label>
-                        <input matInput   placeholder="email">
+                        <input matInput  placeholder="email">
                         <mat-error>required</mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Password</mat-label>
-                        <input matInput  placeholder="password">
+                        <input matInput f placeholder="password">
                         <mat-error>required</mat-error>
         
                     </mat-form-field>
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Confirm Password</mat-label>
+                        <input matInput   placeholder="confirm password">
+                        <mat-error>required</mat-error>
+                    </mat-form-field>
                 </form>
                 <div class="d-flex justify-content-center">
-                    <button   mat-raised-button color="warn">Login</button>
+                    <button mat-raised-button color="warn">Create Account</button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a routerLink="/auth/login">Have an Account ? </a>
                 </div>
             </div>
          </div>

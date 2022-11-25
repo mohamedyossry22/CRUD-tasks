@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path:'tasks', 
-  loadChildren: () => import(`./tasks-admin/tasks.module`).then(m => m.TasksAdminModule)
+  {
+    path:'tasks', 
+  loadChildren: () => import(`./tasks/tasks.module`).then(m => m.TasksModule)
   },
-  {path:'login', 
+  {
+    path:'auth', 
   loadChildren: () => import(`./auth/auth.module`).then(m => m.AuthModule)
   },
 

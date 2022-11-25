@@ -11,7 +11,6 @@ export class AddTaskComponent implements OnInit {
 
   constructor(private fb:FormBuilder , public dialog: MatDialogRef<AddTaskComponent> , public matDialog:MatDialog) { }
 
-  taskForm!:FormGroup;
   users:any = [
     {name:"Moahmed" , id:1},
     {name:"Ali" , id:2},
@@ -19,22 +18,5 @@ export class AddTaskComponent implements OnInit {
     {name:"Zain" , id:4},
   ]
   ngOnInit(): void {
-    this.createform()
-  }
-
-  createform() {
-    this.taskForm = this.fb.group({
-      title:[''],
-      userId:[''],
-      deadline:[''],
-      description:['']
-    })
-  }
-
-  createNewTask() {
-    this.dialog.close(true);
-  }
-  close() {
-    this.dialog.close(false);
   }
 }

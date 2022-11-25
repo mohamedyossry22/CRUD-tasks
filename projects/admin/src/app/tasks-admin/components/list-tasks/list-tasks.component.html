@@ -1,22 +1,22 @@
 <div class="mt-4">
 
     <div class="d-flex justify-content-end">
-        <button class="addTask" mat-raised-button (click)="addTask()" >Add Task</button>
+        <button class="addTask" mat-raised-button  >Add Task</button>
     </div>
 
-    <form [formGroup]="tasksFilter">
+    <form >
         <div class="row mt-3">
                 <div class="col-md-3">
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Search</mat-label>
-                        <input matInput formControlName="title"  placeholder="title search">
+                        <input matInput  placeholder="title search">
                     </mat-form-field>
                 </div>  
                 <div class="col-md-3">
                     
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>By User</mat-label>
-                        <mat-select formControlName="userId">
+                        <mat-select >
                             <mat-option *ngFor="let user of users" [value]="user?.id">
                               {{user?.name}}
                             </mat-option>
@@ -26,7 +26,7 @@
                 <div class="col-md-3">
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Status</mat-label>
-                        <mat-select formControlName="userId">
+                        <mat-select>
                             <mat-option *ngFor="let item of status" [value]="item?.id">
                               {{item?.name}}
                             </mat-option>
@@ -37,8 +37,8 @@
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Enter a date range</mat-label>
                         <mat-date-range-input [rangePicker]="picker">
-                          <input matStartDate placeholder="Start date" formControlName="fromDate">
-                          <input matEndDate placeholder="End date"  formControlName="toDate">
+                          <input matStartDate placeholder="Start date">
+                          <input matEndDate placeholder="End date">
                         </mat-date-range-input>
                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-date-range-picker #picker></mat-date-range-picker>
