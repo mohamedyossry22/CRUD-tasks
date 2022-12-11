@@ -30,6 +30,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css" ,
+              "node_modules/ngx-spinner/animations/square-jelly-box.css",
               "projects/user/src/styles.scss"
             ],
             "scripts": [
@@ -103,6 +105,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css" ,
+              "node_modules/ngx-spinner/animations/square-jelly-box.css",
               "projects/user/src/styles.scss"
             ],
             "scripts": [
@@ -140,6 +144,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css" ,
+              "node_modules/ngx-spinner/animations/square-jelly-box.css",
               "projects/admin/src/styles.scss"
             ],
             "scripts": [
@@ -213,6 +219,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css" ,
+              "node_modules/ngx-spinner/animations/square-jelly-box.css",
               "projects/admin/src/styles.scss"
             ],
             "scripts": [
