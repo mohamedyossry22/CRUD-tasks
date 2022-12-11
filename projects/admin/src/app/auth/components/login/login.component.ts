@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 import { Login, LoginResponse } from '../../context/DTOs';
 import { LoginService } from '../../services/login.service';
 
-@Component({
+@Component({ 
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
