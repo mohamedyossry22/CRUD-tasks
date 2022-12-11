@@ -11,24 +11,21 @@
                 <h2>Login </h2>
              
         
-                <form [formGroup]="loginForm">
+                <form>
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Email</mat-label>
-                        <input matInput formControlName="email"  placeholder="email">
+                        <input matInput   placeholder="email">
                         <mat-error>required</mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Password</mat-label>
-                        <input matInput formControlName="password" type="password" placeholder="password">
+                        <input matInput   placeholder="password">
                         <mat-error>required</mat-error>
         
                     </mat-form-field>
                 </form>
                 <div class="d-flex justify-content-center">
-                    <button   mat-raised-button color="warn" (click)="login()">Login</button>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a routerLink="/auth/register">Create Account ? </a>
+                    <button   mat-raised-button color="warn">Login</button>
                 </div>
             </div>
          </div>
